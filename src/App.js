@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Carousel from "./components/Carousel";
+import CarouselPage from "./components/CarouselPage";
 import Prologue from "./components/Prologue";
 import SubBrand from "./components/SubBrand";
 import ThumbnailProject from "./components/ThumbnailProject";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Carousel />
+      <CarouselPage />
       <Prologue />
       <SubBrand />
       <ThumbnailProject />

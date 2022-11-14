@@ -18,12 +18,9 @@ const ThumbnailProject = () => {
         </div>
       </div>
       <div className="bg-black py-5">
-        <a
-          href="#Our-work"
-          className="text-center text-lg font-normal text-white underline"
-        >
-          Learn more about us!
-        </a>
+        <h1 className="text-center text-lg font-normal text-white underline">
+          <a href="#our-works">Learn more about us!</a>
+        </h1>
       </div>
     </section>
   );
