@@ -1,21 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import CarouselPage from "./components/CarouselPage";
-import Prologue from "./components/Prologue";
-import SubBrand from "./components/SubBrand";
-import ThumbnailProject from "./components/ThumbnailProject";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import OurServices from "./pages/OurServices";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <CarouselPage />
-      <Prologue />
-      <SubBrand />
-      <ThumbnailProject />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/our-services" element={<OurServices />} />
+    </Routes>
   );
 }
 
