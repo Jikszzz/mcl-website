@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../assets/hamburgers.css";
 
 const Navbar = () => {
@@ -30,12 +31,9 @@ const Navbar = () => {
       <div className="container">
         <div className="relative flex items-center justify-between">
           <div className="px-4">
-            <a
-              href="www.meranticreative.com"
-              className="block py-6 text-lg font-bold"
-            >
+            <Link to="/" className="block py-6 text-lg font-bold">
               MCL
-            </a>
+            </Link>
           </div>
           <div className="flex items-center px-4">
             <div className="absolute right-4 block lg:hidden">
@@ -63,28 +61,28 @@ const Navbar = () => {
             >
               <ul className="block lg:flex">
                 <li className="group flex justify-center">
-                  <a
-                    href="#home"
+                  <Link
+                    to="/our-services"
                     className="mx-8 flex py-2 text-base duration-300 group-hover:text-slate-400"
                   >
                     Our Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="group flex justify-center">
-                  <a
-                    href="#home"
+                  <Link
+                    to="/our-works"
                     className="mx-8 flex py-2 text-base duration-300 group-hover:text-slate-400"
                   >
                     Our Works
-                  </a>
+                  </Link>
                 </li>
                 <li className="group flex justify-center">
-                  <a
-                    href="#home"
+                  <Link
+                    to="/about"
                     className="mx-8 flex py-2 text-base duration-300 group-hover:text-slate-400"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="group flex justify-center">
                   <a
@@ -99,28 +97,28 @@ const Navbar = () => {
             <nav className="absolute right-0 top-full hidden w-full bg-black py-5 lg:static lg:block lg:max-w-full">
               <ul className="block lg:flex">
                 <li className="group flex justify-center">
-                  <a
-                    href="#home"
+                  <Link
+                    to="/our-services"
                     className="mx-8 flex py-2 text-base duration-300 group-hover:text-slate-400"
                   >
                     Our Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="group flex justify-center">
-                  <a
-                    href="#home"
+                  <Link
+                    to="/our-works"
                     className="mx-8 flex py-2 text-base duration-300 group-hover:text-slate-400"
                   >
                     Our Works
-                  </a>
+                  </Link>
                 </li>
                 <li className="group flex justify-center">
-                  <a
-                    href="#home"
+                  <Link
+                    to="/about"
                     className="mx-8 flex py-2 text-base duration-300 group-hover:text-slate-400"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="group flex justify-center">
                   <a
