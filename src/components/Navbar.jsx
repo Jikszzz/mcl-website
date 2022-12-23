@@ -13,13 +13,16 @@ const Navbar = () => {
       SetVisible(false);
     } else {
       SetVisible(true);
+      setNav(true);
     }
     setPrevScrollPos(currentScrollPos);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", hideBackground);
     return () => window.removeEventListener("scroll", hideBackground);
   });
+
   return (
     <header
       className={
