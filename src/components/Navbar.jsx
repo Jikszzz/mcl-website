@@ -36,7 +36,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex items-center px-4">
-            <div className="absolute right-4 block lg:hidden">
+            <div className="absolute right-4 block md:hidden">
               <button
                 onClick={() => setNav(!nav)}
                 class={
@@ -55,11 +55,11 @@ const Navbar = () => {
               onClick={() => setNav(!nav)}
               className={
                 nav
-                  ? "absolute left-0 top-[-300%] -z-10 w-full origin-top scale-y-0 bg-black py-5 duration-300 lg:hidden"
-                  : "absolute left-0 top-full -z-10 w-full bg-black py-5 duration-500 lg:hidden"
+                  ? "absolute left-0 top-[-300%] -z-10 w-full origin-top scale-y-0 bg-black py-5 duration-300 md:hidden"
+                  : "absolute left-0 top-full -z-10 w-full bg-black py-5 duration-500 md:hidden"
               }
             >
-              <ul className="block lg:flex">
+              <ul className="block md:flex">
                 <li className="group flex justify-center">
                   <Link
                     to="/our-services"
@@ -94,8 +94,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </nav>
-            <nav className="absolute right-0 top-full hidden w-full bg-black py-5 lg:static lg:block lg:max-w-full">
-              <ul className="block lg:flex">
+            <nav className="absolute right-0 top-full hidden w-full bg-black py-5 md:static md:block md:max-w-full">
+              <ul className="block md:flex">
                 <li className="group flex justify-center">
                   <Link
                     to="/our-services"
