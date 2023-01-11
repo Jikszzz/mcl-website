@@ -11,8 +11,8 @@ const ListServices = () => {
         </h1>
       </div>
       <div className="columns-2">
-        <ul className="underline">
-          <li className="bg-blue-300">Design & Branding</li>
+        <ul className="list-disc underline">
+          <li>Design & Branding</li>
           <li>Advertising</li>
           <li>Social Media Management</li>
           <li>Architecture & Interior</li>
